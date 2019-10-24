@@ -5,4 +5,8 @@ This information will be the position of the ball and the players bat to make a 
 This part is the websocket/server part
 see: https://github.com/THector99/PongClient  for the python clients.
 
+# Example:
+This websocket has been uploaded to heroku on the link: https://pwebsock.herokuapp.com/
+here it is meant as a kinda crappy chat room, no names and all messages will be send to everyone who has been connected to the socket.
+
 THector99
