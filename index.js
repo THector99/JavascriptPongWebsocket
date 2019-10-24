@@ -1,5 +1,5 @@
 var server = require('ws').Server;
-var s = new server({ port: 80 });
+var s = new server({ port: 1234});
 
 s.on('connection', function(ws){
 		ws.on('message',function(message){
