@@ -7,6 +7,9 @@
   "node": "10.16.3",
   "npm": "6.9.0"
   },
+  "scripts": {
+    "start": "node index.js"
+  },
   "author": "Tim Dons",
   "license": "ISC",
   "dependencies": {
