@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Websockets</title>
+	</head>
+  <body>
+    <input type="text" id="txt">
+	<button onclick="SendHey()" id="SendHeyBtn">Verstuur</button>
+	<div id="log"></div>
+    <script>
+      var HOST = location.origin.replace(/^http/, 'ws')
+      var ws = new WebSocket(HOST);
+      var log = document.getElementById("log");
+	
+	ws.onmessage = function(event) {
+		console.log(event.data);
+		log.innerHTML+=event.data+"<br>";
+	};
+	
+	function SendHey()
+	{
+		text = document.getElementById("txt").value;
+		ws.send(text);
+	}
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "PythonWebSocket",
+  "version": "1.0.0",
+  "engines": {
+    "node": "6.2.0"
+  },
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/THector99/PythonWebSocket.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/THector99/PythonWebSocket/issues"
+  },
+  "homepage": "https://github.com/THector99/PythonWebSocket#readme",
+  "dependencies": {
+    "bufferutil": "4.0.1",
+    "express": "4.17.1",
+    "utf-8-validate": "5.0.2",
+    "ws": "7.2.0"
+  }
+}
