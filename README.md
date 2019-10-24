@@ -3,6 +3,6 @@ This is a little project that will connect multiple clients together via websock
 This information will be the position of the ball and the players bat to make a multiplayer Pong.
 
 This part is the websocket/server part
-see:  for the python clients.
+see: https://github.com/THector99/PongClient  for the python clients.
 
 THector99
