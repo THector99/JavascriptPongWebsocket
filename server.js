@@ -19,7 +19,7 @@ wss.on('connection', function(ws){
   ws.on('message', function(message){
 	  console.log("Received: "+ message);
 	  
-	  s.clients.forEach(function e(client){
+	  wss.clients.forEach(function e(client){
 		client.send(message);
 			});
   });
