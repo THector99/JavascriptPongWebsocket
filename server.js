@@ -18,9 +18,10 @@ wss.on('connection', function(ws){
   
   ws.on('message', function(message){
 	  console.log("Received: "+ message);
-	  
+	  var msg = JSON.parse(message.data);
+	  console.log("msg: " + msg);
 	  wss.clients.forEach(function e(client){
-		client.send(toString(client) + " has send you: " +message);
+		client.send(message);
 			});
   });
   
